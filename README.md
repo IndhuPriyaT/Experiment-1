@@ -15,6 +15,28 @@ cases.
 5. Stop the program. 
 
 ## Program
+## 1. do-while
+```
+def display():
+    start = input("Enter a positive value for START: ")
+    end = input("Enter a positive value for END: ")
+
+    if start.isnumeric() and end.isnumeric():
+        start = int(start)
+        end = int(end)
+
+        while True:
+            print(start, end=' ')  # Corrected quote
+
+            if start < end:
+                start += 1
+            else:
+                break
+    else:
+        print("Enter a valid positive number.")
+
+display()
+```
 
 ## Output
 
